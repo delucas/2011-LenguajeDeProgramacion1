@@ -1,0 +1,4 @@
+
+public enum Resultado {
+	VICTORIAJUGADOR1, VICTORIAJUGADOR2, EMPATE
+}
