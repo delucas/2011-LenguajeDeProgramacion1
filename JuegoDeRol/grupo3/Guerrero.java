@@ -1,27 +1,28 @@
-enum Armas {
-	MAZO, ESPADA, DAGA, VARA
-}
 public class Guerrero {
-	private String nombreGuerrero;
-	private Armas arma;
 
-	private int vida=100;
-	
-	public Guerrero (String nombre, Armas armaGuerrero){
-		this.nombreGuerrero = nombre;
-		this.arma = armaGuerrero;
+	private int vida = 100;
+
+	public Guerrero() {
 
 	}
-	
-	public void golpear(Guerrero guerreroAGolpear){
-		if(this.vida>0){
-			guerreroAGolpear.vida = guerreroAGolpear.vida - (int)(Math.random()*10)+1; 			
+
+	public void golpear(Guerrero guerreroAGolpear) {
+
+		if (this.vida > 0) {
+			if (guerreroAGolpear.getVida() >= 0) {
+				guerreroAGolpear.vida = guerreroAGolpear.vida
+						- (int) (Math.random() * 20) + 1;
+			}
+			if(guerreroAGolpear.getVida()<=0){
+				guerreroAGolpear.vida = 0;
+			}
 		}
-		
-		
+
 	}
-	public int getVida(){
+
+	public int getVida() {
 		return this.vida;
 	}
 
+	
 }
