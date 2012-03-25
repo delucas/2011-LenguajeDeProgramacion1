@@ -1,0 +1,211 @@
+Welcome to DrJava.
+> JugadorDeTenis roddick = new JugadorDeTenis()
+> JugadorDeTenis nadal = new JugadorDeTenis()
+> SetDeTenis primerSet = new SetDeTenis(nadal, roddick)
+> roddick.getPuntaje()
+0
+> nadal.getPuntaje()
+0
+> roddick.getPuntajeDeTenis()
+CERO
+> nadal.getPuntajeDeTenis()
+CERO
+> primerSet.saque()
+"El juego está en curso."
+> primerSet.saque()
+"El juego está en curso."
+> roddick.getPuntaje()
+1
+> nadal.getPuntaje()
+1
+> roddick.getPuntajeDeTenis()
+QUINCE
+> nadal.getPuntajeDeTenis()
+QUINCE
+> primerSet.saque()
+"El juego está en curso."
+> primerSet.saque()
+"El juego está en curso."
+> roddick.getPuntajeDeTenis()
+TREINTA
+> nadal.getPuntajeDeTenis()
+TREINTA
+> primerSet.saque()
+"El juego está en curso."
+> primerSet.saque()
+"El set ha finalizado. Ha ganado el primer jugador que ha ingresado."
+> roddick.getPuntaje()
+2
+> nadal.getPuntaje()
+4
+> roddick.getPuntajeDeTenis()
+TREINTA
+> nadal.getPuntajeDeTenis()
+GAME
+> primerSet.saque()
+Error: El set ha finalizado. Inicie uno nuevo para continuar jugando.
+  at SetDeTenis.saque(SetDeTenis.java:46)
+  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  at java.lang.reflect.Method.invoke(Method.java:597)
+> SetDeTenis segundoSet = new SetDeTenis(roddick, nadal)
+> nadal.getPuntaje()
+0
+> roddick.getPuntaje()
+0
+> nadal.getPuntajeDeTenis()
+CERO
+> roddick.getPuntajeDeTenis()
+CERO
+> segundoSet.saque()
+"El juego está en curso."
+> segundoSet.saque()
+"El juego está en curso."
+> nadal.getPuntaje()
+1
+> roddick.getPuntaje()
+1
+> segundoSet.saque()
+"El juego está en curso."
+> segundoSet.saque()
+"El juego está en curso."
+> segundoSet.saque()
+"El set ha finalizado. Ha ganado el segundo jugador que ha ingresado."
+> nadal.getPuntaje()
+4
+> roddick.getPuntaje()
+1
+> nadal.getPuntajeDeTenis()
+GAME
+> roddick.getPuntajeDeTenis()
+QUINCE
+> segundoSet.saque()
+Error: El set ha finalizado. Inicie uno nuevo para continuar jugando.
+  at SetDeTenis.saque(SetDeTenis.java:46)
+  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  at java.lang.reflect.Method.invoke(Method.java:597)
+> nadal.getSetsGanados()
+2
+> roddick.getSetsGanados()
+0
+> SetDeTenis tercerSet = new SetDeTenis(roddick, nadal)
+> tercerSet.saque()
+"El juego está en curso."
+> tercerSet.saque()
+"El juego está en curso."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+CERO
+> tercerSet.saque()
+"El juego está en curso."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+QUINCE
+> tercerSet.saque()
+"El juego está en curso."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+TREINTA
+> tercerSet.saque()
+"El juego está en curso."
+> tercerSet.saque()
+"El set ha finalizado. Ha ganado el primer jugador que ha ingresado."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+GAME
+> 
+> tercerSet.saque()
+Error: El set ha finalizado. Inicie uno nuevo para continuar jugando.
+  at SetDeTenis.saque(SetDeTenis.java:46)
+  at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  at java.lang.reflect.Method.invoke(Method.java:597)
+> nadal.getSetsGanados()
+2
+> roddick.getSetsGanados()
+1
+
+> cuartoSet.saque()
+"El juego está en curso."
+> nadal.getPuntajeDeTenis()
+QUINCE
+> roddick.getPuntajeDeTenis()
+CERO
+> cuartoSet.saque()
+"El juego está en curso."
+> cuartoSet.saque()
+"El juego está en curso."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+QUINCE
+> cuartoSet.saque()
+"El juego está en curso."
+> cuartoSet.saque()
+"El juego está en curso."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+CUARENTA
+> cuartoSet.saque()
+"El set ha finalizado. Ha ganado el primer jugador que ha ingresado."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+GAME
+> cuartoSet.saque()
+Error: El set ha finalizado. Inicie uno nuevo para continuar jugando.
+  at SetDeTenis.saque(SetDeTenis.java:46)
+  at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  at java.lang.reflect.Method.invoke(Method.java:597)
+> roddick.getSetsGanados()
+2
+> nadal.getSetsGanados()
+2
+> SetDeTenis quintoSet = new SetDeTenis(nadal, roddick)
+> quintoSet.saque()
+"El juego está en curso."
+> quintoSet.saque()
+"El juego está en curso."
+> quintoSet.saque()
+"El juego está en curso."
+> nadal.getPuntajeDeTenis()
+TREINTA
+> roddick.getPuntajeDeTenis()
+QUINCE
+> quintoSet.saque()
+"El juego está en curso."
+> quintoSet.saque()
+"El set ha finalizado. Ha ganado el primer jugador que ha ingresado."
+> nadal.getPuntajeDeTenis()
+GAME
+> roddick.getPuntajeDeTenis()
+QUINCE
+> quintoSet.saque()
+Error: El set ha finalizado. Inicie uno nuevo para continuar jugando.
+  at SetDeTenis.saque(SetDeTenis.java:46)
+  at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  at java.lang.reflect.Method.invoke(Method.java:597)
+> 
+> SetDeTenis sextoSet = new SetDeTenis(nadal, roddick)
+Error: El partido ya ha finalizado y no pueden seguir jugándose nuevos sets. Ha ganado el jugador con mayor número de sets ganados.
+  at SetDeTenis.<init>(SetDeTenis.java:16)
+  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+  at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+
+> nadal.getSetsGanados()
+3
+> roddick.getSetsGanados()
+2
+> 
